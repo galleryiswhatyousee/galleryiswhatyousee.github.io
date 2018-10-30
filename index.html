@@ -1,36 +1,103 @@
-<!doctype html>
+<!DOCTYPE html>
+<html>
+
 <head>
-<title>Gallery</title>
+<title>OUR SPONSORS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
 
 <style>
-  body { text-align: center; padding: 150px;margin: 0%; }
-  h1 { font-size: 41px; }
-  body { font: 20px Helvetica, sans-serif; color: #fff; }
-  article { display: block; text-align: left; width: 650px; margin: 0 auto; }
-  a { color: #dc8100; text-decoration: none; }
-  a:hover { color: #333; text-decoration: none; }
-  body{
-      background: url('dark.jpg') no-repeat center;
-      background-size: cover;
-      display: flex;
-  }
-  article { display: flex; text-align: center; width: 650px; margin: auto;
-  flex-direction: column;
-  background: rgba(0, 0, 0, 0.4) }
-  @media only screen and (max-width:576px){
-    body{
-        padding: 0%;
-        height: 100vh;
-    }
-  }
+.tagholder{
+  height:50px;
+  background-color:black;
+
+display:flex;  
+    margin-top: 50px;
+}
+.tag{
+  margin:auto;
+  width:200px;
+  background-color:black;
+  height:50px;
+  display:flex;
+  
+}
+a{outline:1px white solid;
+  margin:auto;
+  display:flex;
+  text-decoration:none;
+  color:white;
+}
+a span{
+  margin:auto;
+  
+}
+*{margin:0px;
+padding:0px;}
+body{
+background-color:black;
+height:100vh;
+width:100vw;
+display:flex;}
+.mySlides {display:none;}
+h2,h6{
+text-align:center;
+color:white;}
+.centermydiv{margin:auto;}
+h6{margin-bottom: 29px;}
 </style>
-<meta name="viewport" content="width=device-width, initial-scale=1.0"></head>
+</head>
+
 <body>
-    <article>
-        <h1>May the pics be VVith you; soon!</h1>
-        <div>
-            <p>We appreciate your interest but we are still working on it. <br/><a href="mailto:anvesha@iisertvm.ac.in">contact us</a></p>
-            <p>&mdash; TechTeam</p>
-        </div>
-    </article>
+
+
+
+<div class="centermydiv" style="max-width:500px">
+  <div class="mySlides">
+<h2>Photography contest</h2>
+<h6>Sponsored by</h6>
+<img src="cone.png" style="width:100%">
+<div class="tagholder">
+  
+  <a href=""><div class="tag"><span>
+    POSTER
+    </span></div></a>
+  
+</div>
+</div>
+
+ <div class="mySlides">
+<h2>Photography contest</h2>
+<h6>Sponsored by</h6>
+ <img src="ctwo.png" style="width:100%">
+<div class="tagholder">
+  
+  <a href=""><div class="tag"><span>
+    POSTER
+    </span></div></a>
+  
+</div>
+</div>
+
+ 
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 4000); // Change image every 2 seconds
+}
+</script>
+
 </body>
+</html>
